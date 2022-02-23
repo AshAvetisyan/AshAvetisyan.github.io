@@ -1,0 +1,1748 @@
+@font-face {
+    font-family: AntFont;
+    src: url(../fonts/antipasto.extralight.ttf);
+}
+
+@font-face {
+    font-family: AntThin;
+    src: url(../fonts/antipasto.thin.ttf);
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url(../fonts/roboto.thin.ttf);
+}
+
+@font-face {
+    font-family: JoseThin;
+    src: url(../fonts);
+}
+
+@mixin portfolioDiv {
+    width: 457px;
+    height: 287px;
+    background-color: #3b5158;
+    border-radius: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+@mixin portfolioMaterial {
+    width: 457px;
+    height: 287px;
+    border-radius: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+
+}
+
+@mixin portfolioLogo1 {
+    width: 300px;
+    height: 170px;
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+}
+
+@mixin portfolioLogo2 {
+    width: 143px;
+    height: 110px;
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 71.5px);
+}
+
+@mixin portfolioLogo3 {
+    width: 301px;
+    height: 106px;
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 53px);
+    left: calc(50% - 150.5px);
+}
+
+@mixin portfolioButton {
+    width: 165px;
+    height: 46px;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: 1px 1px 15px #FFFFFF;
+    color: #FFFFFF;
+    font-family: AntFont;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: calc(50% - 82.5px);
+    display: none;
+}
+
+@mixin skillDiv {
+    width: 536px;
+    height: 60px;
+    border-radius: 17px;
+    color: #FFFFFF;
+    font-family: RobotoThin;
+    font-size: 30px;
+    line-height: 41px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 44px auto;
+
+    span {
+        margin: auto 20px;
+    }
+
+}
+
+@keyframes Typing {
+  0%,30%,100%{
+      width: 594.27px;
+  }
+  60%{
+      width: 0px;
+  }
+} 
+
+@keyframes btnHold {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    40% {
+        opacity: 1;
+        box-shadow: 0 0 3px 3px #ffffffc9;;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  } 
+
+
+// for 1300-1600px
+
+@mixin portfolioDiv1300-1600 {
+    width: 419px;
+    height: 269px;
+    
+    background-color: #3b5158;
+    border-radius: 40px;
+}
+
+@mixin portfolioMaterial1300-1600 {
+    width: 419px;
+    height: 269px;
+    border-radius: 40px;
+}
+
+@mixin portfolioButton1300-1600 {
+    width: 145px;
+    height: 45px;
+    font-size: 15px;
+    font-family: AntFont;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    color: #FFFFFF;
+    box-shadow: 0 0 3px 3px #ffffffc9;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: calc(50% - 72.5px);
+    display: none;
+}
+
+
+@mixin skillDiv1300-1600 {
+    width: 479px;
+    height: 54px;
+    font-size: 25px;
+    line-height: 41px;
+
+    span {
+        margin: auto 20px;
+    }
+}
+
+
+// under 600px
+
+@mixin skillDiv0-600 {
+    width: 80%;
+    height: 49px;
+    font-size: 20px;
+    line-height: 41px;
+
+    span {
+        margin: auto 20px;
+    }
+
+}
+
+
+@mixin portfolioDiv0-600 {
+    width: 349px;
+    height: 224px;
+    background-color: #3b5158;
+    border-radius: 40px;
+}
+
+@mixin portfolioMaterial0-600 {
+    width: 349px;
+    height: 224px;
+    border-radius: 40px;
+}
+
+@mixin portfolioButton0-600 {
+    width: 145px;
+    height: 45px;
+    font-size: 15px;
+    font-family: AntFont;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    color: #FFFFFF;
+    box-shadow: 0 0 3px 3px #ffffffc9;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: calc(50% - 72.5px);
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-image: url("../images/Frame5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+.section1 {
+    width: 100%;
+    height: 100vh;
+
+/*  background-image: url("../images/earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+*/
+        .menudiv {
+            width: auto;
+            height: auto;
+            display: flex;
+            padding: 50px 0 50px 142px;
+
+            li {
+                list-style: none;
+                padding: 0 23px 0 23px;
+                    a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-size: 27px;
+                    font-family: AntFont;
+                        &:hover {
+                            border-bottom: 1px solid #FFFFFF;
+                            transition-duration: 1s;
+                        }
+
+                }
+
+                
+            }
+        }
+
+        .mobileMainPic{
+            img {
+                display: none;
+            }
+        }
+        
+            
+        .section1main{
+            width: 100%;
+            height: calc(100% - 123px);
+            display: flex;
+        
+            .section1prt1{ 
+                width: 50%; 
+                height: auto;
+
+                .introText {
+                    width: 800px;
+                    height: auto;
+                    margin: calc(50vh - 244px) 0 0 165px;
+                    font-family: AntFont;
+                    
+                    h1 {
+                        color: #FFFFFF;
+                        font-size: 72px;
+                        width: auto;
+                        margin-bottom: 20px;
+                        font-family: AntThin;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        display: inline-block;
+                        animation: Typing 5s steps(23) infinite;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        color: #FFFFFF;
+                        font-size: 36px;
+                        font-family: AntFont;
+                        margin: 8px 0;
+                    }
+
+                    button {
+                        width: 145px;
+                        height: 46px;
+                        margin: 36px 0 0 0; 
+                        font-size: 20px;
+                        font-family: AntFont;
+                        background-color: transparent;
+                        border: 3px solid #ffffff;
+                        border-radius: 15px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        &:hover {
+                            animation-name: btnHold;
+                            animation-duration: 3s;
+                            animation-delay: 0.5s;
+                            animation-iteration-count: infinite;
+                            transition: 0.5s;
+                            box-shadow: 0 0 3px 3px #ffffffc9;
+                        }
+                    }
+                }
+            
+            }
+        
+            .section1prt2 {
+                width: 50%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    
+
+}
+
+
+
+.section2 {
+    width: 100%;
+    height: auto;
+
+    background-image: url("../images/Frame5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    h2 {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: AntThin;
+        font-size: 60px;
+        padding-top: 50px;
+    }
+
+    .portfolios {
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+
+        .portfolio1 {
+           @include portfolioDiv();
+           margin: 50px 20px;
+            
+     
+            .material1 {
+                @include portfolioMaterial();
+            }
+
+            .portfolioLogo1 {
+                @include portfolioLogo1();
+            }
+
+            button{
+                @include portfolioButton();
+            }
+            
+        }
+
+        .portfolio2 {
+            @include portfolioDiv();
+            margin: 50px 20px;
+            
+     
+            .material2 {
+                @include portfolioMaterial();
+            }
+
+            .portfolioLogo2 {
+                @include portfolioLogo2();
+            }
+
+            button{
+                @include portfolioButton();
+            }
+            
+        }
+ 
+        .portfolio3 {
+            @include portfolioDiv();
+            margin: 50px 20px;
+            
+     
+            .material3 {
+                @include portfolioMaterial();
+                
+            }
+
+            .portfolioLogo3 {
+                @include portfolioLogo3();
+            }
+             
+            button{
+                @include portfolioButton();
+            }
+            
+        }
+        
+    }
+
+}
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, transparent 25%, #0C3645 25%, #0C3645 25%, #0C3645 25%);
+
+    h2 {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: AntThin;
+        font-size: 60px;
+        padding-top: 50px;
+    }
+
+    .aboutMain {
+        width: 100%;
+        height: calc(100% - 151px);
+        display: flex;
+    }
+
+    .aboutPicDiv{
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+        .aboutPic {
+            width: 60%;
+            height: 60%;
+            background-color: #0C3645;
+            border-radius: 50px;
+            margin: auto;
+            position: relative;
+            
+            img {
+                float: left;
+                width:  100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50px;
+                
+                
+            }
+
+
+        }
+    }
+
+    .aboutInfoDiv {
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+        .aboutInfo{
+            width: 70%;
+            height: auto;
+            margin: auto auto ;
+             
+            span {
+               font-size: 26px;
+               color: #FFFFFF;
+               font-family: AntFont;
+               
+            } 
+        }
+    }
+
+
+}
+
+.footerBack {
+
+    background-image: url("../images/Frame5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+
+.section4 {
+    width: 100%;
+    height: auto;
+    
+    .skillDiv {
+        width: 100%;
+        height: auto;
+
+        h2 {
+            text-align: center;
+            color: #FFFFFF;
+            font-family: AntThin;
+            font-size: 50px;
+            padding-top: 55px;
+        }
+        
+        .skillMain{
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            .skillDiv1 {
+                width: 50%;
+                height: 100%;
+                
+                .skills1 {
+                    width: auto;
+                    height: auto;
+
+                    .skill1 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 47.93%, #979FEA 84.08%);
+                    }
+
+                    .skill2 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 47.93%, #979FEA 84.08%);
+                    }
+
+                    .skill3 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 45.93%, grey);
+                    }
+
+                }
+            }
+    
+            .skillDiv2 {
+                width: 50%;
+                height: 100%;
+
+                .skills2 {
+                    width: auto;
+                    height: auto;
+
+                    .skill4 {
+                        @include skillDiv();
+                        
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 55.93%, grey 85.08%);
+                    }
+
+                    .skill5 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 47.93%, #979FEA 84.08%);
+                    }
+
+                    .skill6 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 45.93%, grey);
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    .languageDiv {
+        width: 100%;
+        height: auto;
+
+        h2 {
+            text-align: center;
+            color: #FFFFFF;
+            font-family: AntThin;
+            font-size: 50px;
+            padding-top: 55px;
+        }
+
+        .langMain{
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            .langDiv1 {
+                width: 100%;
+                height: 100%;
+                
+                .langs1 {
+                    width: auto;
+                    height: auto;
+
+                    .lang1 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 47.93%, #979FEA 84.08%);
+                    }
+
+                    .lang2 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 75.93%, grey);
+                    }
+
+                    .lang3 {
+                        @include skillDiv();
+                        background: linear-gradient(90deg, #4E5FFC 14.17%, rgba(242, 118, 193, 0.96) 45.93%, grey);
+                    }
+
+                }
+            }
+    
+        }
+    }
+}
+
+
+.sectionFooter {
+    width: 100%;
+    height: auto;
+    
+    h2 {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: AntThin;
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .footerInfo {
+        width: 100%;
+        height: 250px;
+        display: flex;
+
+        .footerInfo1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+                
+            .footerLinks1{
+                margin: auto;
+                a {
+                    font-size: 25px;
+                    color: #FFFFFF;
+                    font-family: Arial;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-family: RobotoThin;
+                    &:hover {
+                        text-shadow: 0px 0px 10px #FFFFFF;
+                        transition: 0.5s;
+                    }
+
+                    i {
+                        font-size: 30px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        .footerInfo2 {
+            width: 50%;
+            height: 100%;   
+            display: flex;
+
+            .footerLinks2 {
+                margin: auto;
+                a {
+                    font-size: 30px;
+                    color: #FFFFFF;
+                    font-family: Arial;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-family: AntThin;
+                    &:hover {
+                        text-shadow: 0px 0px 10px #FFFFFF;
+                        transition: 0.5s;
+                    }
+                    
+
+                    i {
+                        font-size: 30px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    p {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: AntThin;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    
+
+}
+
+
+
+// For Max 1600px
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+
+ .section1{
+
+    .menudiv {
+        li {
+            a {
+            font-size: 25px;
+            }
+        }
+    }
+
+    .introText {
+        width: 600px;
+        height: auto;
+
+        h1 {
+            font-size: 60px;
+        }
+    
+        p {
+            font-size: 30px;
+        }
+    
+        
+    }
+ }  
+
+ 
+ .section2 {
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .portfolios {
+
+        .portfolio1 {
+           @include portfolioDiv1300-1600();
+            
+            .material1 {
+                @include portfolioMaterial1300-1600();
+            }
+
+            button{
+                @include portfolioButton1300-1600();
+            }
+            
+        }
+
+        .portfolio2 {
+            @include portfolioDiv1300-1600();
+            
+     
+            .material2 {
+                @include portfolioMaterial1300-1600();
+            }
+
+            button{
+                @include portfolioButton1300-1600();
+            }
+            
+        }
+ 
+        .portfolio3 {
+            @include portfolioDiv1300-1600();
+            
+     
+            .material3 {
+                @include portfolioMaterial1300-1600();
+                
+            }
+
+            button{
+                @include portfolioButton1300-1600();
+            }
+            
+        }
+        
+    }
+
+}
+
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #001D26 25%, #0C3645 25%, #0C3645 25%, #0C3645 25%);
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .aboutInfoDiv {
+
+        .aboutInfo{
+            
+            span {
+               font-size: 24px;
+            } 
+        }
+    }
+
+
+}
+
+
+
+
+
+.section4 {
+    
+    
+    .skillDiv {
+        
+
+        h2 {
+            padding-top: 55px;
+        }
+        
+        .skillMain{
+            
+
+            .skillDiv1 {
+                
+                
+                .skills1 {
+                    
+
+                    .skill {
+                        @include skillDiv1300-1600();
+                    }
+
+                }
+            }
+    
+            .skillDiv2 {
+                
+                .skills2 {
+                    
+                    .skill {
+                        @include skillDiv1300-1600();
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    .languageDiv {
+
+        h2 {
+            padding-top: 55px;
+        }
+
+        .langMain{
+            
+            .langDiv1 {
+                
+                .langs1 {
+                    
+
+                    .skill {
+                        @include skillDiv1300-1600();
+                    }
+
+                }
+            }
+    
+
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+// For Mobile Size
+
+
+
+@media screen and (min-width: 50px) and (max-width: 1000px) {
+
+    
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #001D26 25%, #0C3645 25%, #0C3645 25%, #0C3645 25%);
+    
+        .menudiv {
+            width: auto;
+            height: auto;
+            display: flex;
+            padding: 23px 0 0 0;
+            text-align: center;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                padding: 0 23px 0 23px;
+                    a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-size: 27px;
+                    font-family: AntFont;
+                        &:hover {
+                            border-bottom: 1px solid #FFFFFF;
+                            transition-duration: 1s;
+                        }
+
+                }
+
+            }
+        }
+
+        .mobileMainPic{
+            text-align: center;
+            margin-top: calc(25% - 54px);
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                display: inline;
+            }
+        }
+        .section1main{
+            display: block;
+            height: auto;
+
+            .section1prt1{
+                width: 100%;
+
+                .introText {
+                    width: auto;
+                    height: auto;
+                    margin: 65px auto auto auto;
+                    font-family: AntFont;
+                    text-align: center;
+        
+                    h1 {
+                        color: #FFFFFF;
+                        font-size: 50px;
+                        width: auto;
+                        margin-bottom: 20px;
+                        font-family: AntThin;
+                        overflow: hidden;
+                        animation: none;
+                        text-align: center;
+                    }
+        
+                    p {
+                        color: #FFFFFF;
+                        font-size: 25px;
+                        font-family: AntFont;
+                        margin: 8px 0;
+                    }
+        
+                    input {
+                        width: 145px;
+                        height: 46px;
+                        margin: 36px 0 0 0; 
+                        font-size: 20px;
+                        font-family: AntFont;
+                        background-color: #0C3645;
+                        border: 3px solid #ffffff;
+                        border-radius: 10px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        &:hover {
+                            animation-name: BorderLightning;
+                            animation-duration: 2s;
+                        }
+                    }
+        
+                
+                }
+ 
+            }
+
+            .section1prt2{
+                display: none;
+            }
+        }
+        
+
+}
+
+
+    
+    .section2 {
+   
+       h2 {
+           font-size: 50px;
+       }
+   
+       .portfolios {
+   
+           .portfolio1 {
+              @include portfolioDiv1300-1600();
+               
+               .material1 {
+                   @include portfolioMaterial1300-1600();
+               }
+   
+               button{
+                   @include portfolioButton1300-1600();
+               }
+               
+           }
+   
+           .portfolio2 {
+               @include portfolioDiv1300-1600();
+               
+        
+               .material2 {
+                   @include portfolioMaterial1300-1600();
+               }
+   
+               button{
+                   @include portfolioButton1300-1600();
+               }
+               
+           }
+    
+           .portfolio3 {
+               @include portfolioDiv1300-1600();
+               
+        
+               .material3 {
+                   @include portfolioMaterial1300-1600();
+                   
+               }
+   
+               button{
+                   @include portfolioButton1300-1600();
+               }
+               
+           }
+           
+       }
+   
+   }
+   
+   
+   .section3 {
+       width: 100%;
+       height: 100vh;
+       background: linear-gradient(0deg, #001D26 25%, #0C3645 25%, #0C3645 25%, #0C3645 25%);
+   
+       h2 {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: AntThin;
+        font-size: 50px;
+    }
+
+    .aboutMain {
+        width: 100%;
+        height: calc(100% - 93px);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aboutPicDiv{
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+        .aboutPic {
+            width: 50%;
+            height: 50%;
+            background-color: #0C3645;
+            border-radius: 50px;
+            margin: auto;
+            position: relative;
+        }
+    }
+
+    .aboutInfoDiv {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        .aboutInfo{
+            width: 60%;
+            height: auto;
+            margin: auto auto ;
+             
+            span {
+               font-size: 24px;
+               color: #FFFFFF;
+               font-family: AntFont;
+               
+            } 
+        }
+    }
+   
+   
+   }
+   
+   
+   
+   
+   
+   .section4 {
+       height: auto;
+       
+       .skillDiv {
+           height: auto;
+   
+           h2 {
+               padding-top: 50px;
+           }
+           
+           .skillMain{
+            height: auto;
+            display: block;
+            
+               .skillDiv1 {
+                height: auto;
+                width: auto;
+                   
+                   
+                   .skills1 {
+                    
+   
+                       .skill1 {
+                           @include skillDiv1300-1600();
+                       }
+   
+                       .skill2 {
+                           @include skillDiv1300-1600();
+                       }
+   
+                       .skill3 {
+                           @include skillDiv1300-1600();
+                       }
+   
+                   }
+               }
+       
+               .skillDiv2 {
+                height: auto;
+                width: auto;
+                   
+                   .skills2 {
+                       
+                       .skill4 {
+                           @include skillDiv1300-1600();
+                           
+                       }
+   
+                       .skill5 {
+                           @include skillDiv1300-1600();
+                       }
+   
+                       .skill6 {
+                           @include skillDiv1300-1600();
+                       }
+   
+                   }
+               }
+           }
+           
+       }
+   
+       .languageDiv {
+         height: auto;
+           h2 {
+               padding-top: 50px;
+           }
+   
+           .langMain{
+            height: auto;
+            display: block;
+
+               .langDiv1 {
+                   height: auto;
+                   width: auto;
+                
+                   .langs1 {
+                       
+   
+                       .lang1 {
+                           @include skillDiv1300-1600();
+                           
+                       }
+   
+                       .lang2 {
+                           @include skillDiv1300-1600();
+                           
+                       }
+   
+                       .lang3 {
+                           @include skillDiv1300-1600();
+                           
+                       }
+   
+                   }
+               }
+       
+
+           }
+       }
+   }
+   
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    .sectionFooter {
+
+    
+        .footerInfo {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 50px 0;
+            text-align: center;
+
+            .footerInfo1 {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                
+                .footerLinks1{
+                    margin: auto;
+                    width: 322px;
+
+                    a {
+                        font-size: 25px;
+    
+                        i {
+                            font-size: 30px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+    
+            .footerInfo2 {
+                width: 100%;
+                height: 50%;   
+                display: flex;
+    
+                .footerLinks2 {
+                    margin: auto;
+                    width: 322px;
+
+                    a {
+                        font-size: 28px;                    
+                    }
+                }
+    
+            }
+        }
+    
+        p {
+            font-size: 28px;
+        }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+    .section1 {
+        
+            .menudiv {
+                display: flex;
+                padding: 23px 10px 0 10px;
+                text-align: center;
+                justify-content: space-around;
+                
+                li {
+
+                    padding: 0;
+
+                        a {
+                            font-size: 25px;
+                            &:hover {
+                                border-bottom: none;
+                                transition-duration: 0s;
+                            }
+    
+                    }
+    
+                    
+                }
+            }
+
+            
+            .introText {
+
+                h1 {
+                    font-size: 40px !important;
+                }
+
+                p {
+                    font-size: 22px !important;                    
+                }
+
+            }
+    }
+
+
+    .section2 {
+    
+        h2 {
+
+            font-size: 40px;
+            padding-top: 50px;
+        }
+    
+        .portfolios {
+    
+            .portfolio1 {
+               @include portfolioDiv0-600();
+ 
+         
+                .material1 {
+                    @include portfolioMaterial0-600();
+                }
+    
+                .portfolioLogo1 {
+                    @include portfolioLogo1();
+                    width: 275px;
+                    height: 150px;
+                    left: calc(50% - 137.5px);
+                }
+    
+                button{
+                    @include portfolioButton0-600();
+                }
+                
+            }
+    
+            .portfolio2 {
+                @include portfolioDiv0-600();
+                
+         
+                .material2 {
+                    @include portfolioMaterial0-600();
+                }
+    
+                .portfolioLogo2 {
+                    @include portfolioLogo2();
+                    width: 131px;
+                    height: 100px;
+                    left: calc(50% - 65.5px);
+                }
+    
+                button{
+                    @include portfolioButton0-600();
+                }
+                
+            }
+     
+            .portfolio3 {
+                @include portfolioDiv0-600();
+                
+         
+                .material3 {
+                    @include portfolioMaterial0-600();
+                    
+                }
+    
+                .portfolioLogo3 {
+                    @include portfolioLogo3();
+                    width: 260px;
+                    height: 92px;
+                    left: calc(50% - 130px);
+                }
+                 
+                button{
+                    @include portfolioButton0-600();
+                }
+                
+            }
+            
+        }
+    
+    }
+    
+
+    .section3 {
+    
+        h2 {
+         font-size: 40px;
+         padding-top: 50px;
+     }
+ 
+     .aboutMain {
+         width: 100%;
+         height: calc(100% - 85px);
+     }
+ 
+     .aboutPicDiv{
+ 
+         .aboutPic {
+             width: 50%;
+             height: 50%;
+             background-color: #0C3645;
+             border-radius: 50px;
+             margin: auto;
+             position: relative;
+         }
+     }
+ 
+     .aboutInfoDiv {
+         width: 100%;
+         height: 50%;
+         display: flex;
+
+         .aboutInfo{
+             width: 80%;
+              
+             span {
+                font-size: 20px;
+             } 
+         }
+     }
+    
+    
+    }
+
+
+    .section4 {
+    
+    
+        .skillDiv {
+            
+    
+            h2 {
+                font-size: 40px;
+                padding-top: 50px;
+            }
+            
+            .skillMain{
+                
+    
+                .skillDiv1 {
+                    
+                    
+                    .skills1 {
+                        
+    
+                        .skill {
+                            @include skillDiv0-600();
+                        }
+    
+                    }
+                }
+        
+                .skillDiv2 {
+                    
+                    .skills2 {
+                        
+                        .skill {
+                            @include skillDiv0-600();
+                        }
+    
+                    }
+                }
+            }
+            
+        }
+    
+        .languageDiv {
+    
+            h2 {
+                font-size: 40px;
+                padding-top: 50px;
+            }
+    
+            .langMain{
+                
+                .langDiv1 {
+                    
+                    .langs1 {
+                        
+    
+                        .skill {
+                            @include skillDiv0-600();
+                        }
+    
+                    }
+                }
+        
+
+            }
+        }
+    }
+    
+
+   }
+
+
+   @media screen and (max-width: 500px) {
+
+
+
+    .section1 {
+        
+            .menudiv {
+                display: flex;
+                padding: 23px 10px 0 10px;
+                text-align: center;
+                justify-content: space-around;
+                
+                li {
+
+                    padding: 0;
+
+                        a {
+                        font-size: 22px;
+                            &:hover {
+                                border-bottom: none;
+                                transition-duration: 0s;
+                            }
+    
+                    }
+    
+                    
+                }
+            }
+
+            .introText {
+
+                h1 {
+                    font-size: 35px !important;
+                }
+
+                p {
+                    font-size: 20px !important;                    
+                }
+
+            }
+
+    }
+
+
+
+}
+
+}
+
+
+
+@media screen and (max-width: 400px)  {
+
+    .section1{
+        .mobileMainPic {
+
+            img {
+                width: 150px;
+                height: 150px;
+                margin: calc(25% - 100px) 0 0 0;
+            }
+
+        } 
+    }
+
+
+    .sectionFooter {
+
+        .footerInfo {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 50px 0;
+            text-align: center;
+
+            .footerInfo1 {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                
+                .footerLinks1{
+                    margin: auto;
+                    width: 322px;
+
+                    a {
+                        font-size: 22px;
+    
+                        i {
+                            font-size: 30px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+    
+            .footerInfo2 {
+                width: 100%;
+                height: 50%;   
+                display: flex;
+    
+                .footerLinks2 {
+                    margin: auto;
+                    width: 322px;
+
+                    a {
+                        font-size: 25px;                    
+                    }
+                }
+    
+            }
+        }
+    
+        p {
+            font-size: 28px;
+        }
+     
+    }
+
+
+    .section4 {
+    
+    
+        .skillDiv {
+            
+          
+            .skillMain{
+                
+    
+                .skillDiv1 {
+                    
+                    
+                    .skills1 {
+                        
+    
+                        .skill {
+                            font-size: 18px;
+                        }
+    
+                    }
+                }
+        
+                .skillDiv2 {
+                    
+                    .skills2 {
+                        
+                        .skill {
+                            font-size: 18px;
+                        }
+    
+                    }
+                }
+            }
+            
+        }
+    
+        .languageDiv {
+    
+    
+            .langMain{
+                
+                .langDiv1 {
+                    
+                    .langs1 {
+                        
+    
+                        .skill {
+                            font-size: 18px;
+                        }
+    
+                    }
+                }
+        
+
+            }
+        }
+    }
+}
